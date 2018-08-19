@@ -2,11 +2,13 @@ import HelloDecorator from '@/components/HelloDecorator.vue';
 import { shallowMount } from '@vue/test-utils';
 
 describe('HelloDecorator.vue', () => {
-    it('renders props.msg when passed', () => {
-        const msg = 'new message';
+    it('renders props when passed', () => {
+        const name = 'new message';
+        const initialEnthusiasm = 5;
         const wrapper = shallowMount(HelloDecorator, {
-            propsData: { msg },
+            propsData: { name, initialEnthusiasm },
         });
-        expect(wrapper.text()).toMatch(msg);
+        expect(wrapper.text()).toMatch(name);
+        expect(wrapper.text()).toMatch('!!!!!');
     });
 });
