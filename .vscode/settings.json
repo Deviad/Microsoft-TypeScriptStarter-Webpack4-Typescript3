@@ -3,5 +3,6 @@
     "files.associations": {
         "*.vue": "vue"
     },
-    "tslint.autoFixOnSave": true
+    "tslint.autoFixOnSave": true,
+    "prettier.tslintIntegration": true
 }

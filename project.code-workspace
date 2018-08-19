@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.vue": "vue"
+		},
+		"prettier.tslintIntegration": true,
+		"tslint.alwaysShowStatus": true,
+		"tslint.alwaysShowRuleFailuresAsWarnings": true,
+		"tslint.configFile": "./tslint.json"
+	}
+}

@@ -6,9 +6,36 @@
         "module": "es2015",
         "moduleResolution": "node",
         "target": "es5",
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "types": [
+            "node",
+            "jest"
+        ],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "lib": [
+            "es5",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ]
     },
     "include": [
-        "./src/**/*"
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }
